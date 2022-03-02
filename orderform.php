@@ -22,10 +22,10 @@
             var cell4 = row.insertCell(3);
             var cell5 = row.insertCell(4);
             var cell6 = row.insertCell(5);
-            cell1.innerHTML = '<input  type="hidden" name="numrows" value="'+i+'"/><button onclick="deleteRow(this)">x</button><input type="number" name="idval'+i+'" id="idval'+i+'" value="123" min="0"/>';
-            cell2.innerHTML = '<input type="text" name="product'+i+'" id="product'+i+'" value="sample product"/>';
+            cell1.innerHTML = '<input  type="hidden" name="numrows" value="'+i+'"/><button onclick="deleteRow(this)">x</button><input type="number" name="idval'+i+'" id="idval'+i+'" value="" min="0"/>';
+            cell2.innerHTML = '<input type="text" name="product'+i+'" id="product'+i+'" value=""/>';
             cell3.innerHTML = '<select name="category'+i+'" id="category'+i+'"><option value="Mobile">Mobile</option></select>';
-            cell4.innerHTML = '<input type="number" name="quantity'+i+'" id="quantity'+i+'" value="2" min="0"/>';
+            cell4.innerHTML = '<input type="number" name="quantity'+i+'" id="quantity'+i+'" value="" min="0"/>';
             cell5.innerHTML = '<label>Availability:</label> <input type="radio" name="availability'+i+'" id="yes'+i+'" value="Yes"/><label for="yes'+i+'">Yes</label><input type="radio" name="availability'+i+'" id="no'+i+'" value="No"/><label for="no'+i+'">No</label>';
             cell6.innerHTML = '<label>Discounts:</label> <input type="checkbox" name="discounts['+i+'][]" id="hdfcbank'+i+'" value="HDFC Bank"/> <label for="hdfcbank'+i+'">HDFC Bank</label><input type="checkbox" name="discounts['+i+'][]" id="sbibank'+i+'" value="SBI Bank" />  <label for="sbibank'+i+'">SBI Bank</label><input type="checkbox" name="discounts['+i+'][]" id="mastercard'+i+'" value="Master Card"/>  <label for="mastercard'+i+'">Master Card</label>';
             
@@ -54,14 +54,14 @@
                 {
                     echo '<tr>
                             <input  type="hidden" name="numrows" value="'.$i.'"/>
-                            <td><button onclick="deleteRow(this)">x</button><input type="number" name="idval'.$i.'" id="idval'.$i.'" value="123" min="0"/></td>
+                            <td><button onclick="deleteRow(this)">x</button><input type="number" name="idval'.$i.'" id="idval'.$i.'" value="" min="0"/></td>
                             <td><input type="text" name="product'.$i.'" id="product'.$i.'" value=""/></td>
                             <td>
                                 <select name="category'.$i.'" id="category'.$i.'">
                                     <option value="Mobile">Mobile</option>                        
                                 </select>
                             </td>
-                            <td><input type="number" name="quantity'.$i.'" id="quantity'.$i.'" value="2" min="0"/></td>
+                            <td><input type="number" name="quantity'.$i.'" id="quantity'.$i.'" value="" min="0"/></td>
                             <td>
                                 <label>Availability:</label>
                                 <input type="radio" name="availability'.$i.'" id="yes'.$i.'" value="Yes"/><label for="yes'.$i.'">Yes</label>
@@ -131,8 +131,3 @@ if(isset($_POST['submit']))
 
 }
 ?>
-
-
-
-
-

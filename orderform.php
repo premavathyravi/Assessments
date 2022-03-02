@@ -55,7 +55,7 @@
                     echo '<tr>
                             <input  type="hidden" name="numrows" value="'.$i.'"/>
                             <td><button onclick="deleteRow(this)">x</button><input type="number" name="idval'.$i.'" id="idval'.$i.'" value="123" min="0"/></td>
-                            <td><input type="text" name="product'.$i.'" id="product'.$i.'" value="sample product"/></td>
+                            <td><input type="text" name="product'.$i.'" id="product'.$i.'" value=""/></td>
                             <td>
                                 <select name="category'.$i.'" id="category'.$i.'">
                                     <option value="Mobile">Mobile</option>                        
